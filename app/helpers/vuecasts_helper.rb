@@ -1,0 +1,2 @@
+module VuecastsHelper
+end
