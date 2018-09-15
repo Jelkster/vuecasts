@@ -10,13 +10,15 @@ import Vue from 'vue/dist/vue.esm'
 Vue.use(TurbolinksAdapter)
 
 document.addEventListener('turbolinks:load', () => {
-  var element = document.getElementById('root')
-  if(element != null) {
-    var app = new Vue({
-      el: element,
-      data: {
-        message: 'Hello World'
-      }
-    })
-  }
+  // setTimeout(() => { // simulates vue load delay
+    var element = document.getElementById('root')
+    if(element != null) {
+      var app = new Vue({
+        el: element,
+        data: {
+          message: 'Hello World'
+        }
+      })
+    }
+  // }, 3000)
 })
