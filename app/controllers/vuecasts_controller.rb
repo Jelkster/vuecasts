@@ -4,4 +4,7 @@ class VuecastsController < ApplicationController
 
   def basic_data_binding
   end
+
+  def lists
+  end
 end

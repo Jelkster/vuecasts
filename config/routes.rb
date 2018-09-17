@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   get 'vuecasts/index'
   get 'vuecasts/basic_data_binding'
+  get 'vuecasts/lists'
 end

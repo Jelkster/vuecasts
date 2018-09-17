@@ -1,0 +1,16 @@
+<h1>Vuecasts#lists</h1>
+
+<%= link_to nil, 'https://laracasts.com/series/learn-vue-2-step-by-step/episodes/3' %>
+
+<p></p>
+
+<div id="root-lists">
+  <ul>
+    <!-- <li v-for="name in names">{{ name }}</li> -->
+    <li v-for="name in names" v-text="name"></li>
+  </ul>
+  <!-- $vm0.names.push('Susan') -->
+
+  <input id="input" type="text">
+  <button id="button">Add Name</button>
+</div>
