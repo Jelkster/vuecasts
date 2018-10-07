@@ -4,4 +4,7 @@ class VuemasteryController < ApplicationController
 
   def the_vue_instance
   end
+
+  def attribute_binding
+  end
 end
