@@ -1,4 +1,7 @@
 class VuecastsController < ApplicationController
+  def home
+  end
+
   def index
   end
 
