@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'vuemastery/index'
   get 'vuemastery/the_vue_instance'
   get 'vuemastery/attribute_binding'
+  get 'vuemastery/conditional_rendering'
 end

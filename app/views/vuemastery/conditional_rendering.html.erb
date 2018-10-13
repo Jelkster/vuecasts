@@ -1,0 +1,11 @@
+<h1>Vuemastery#conditional_rendering</h1>
+<p>Find me in app/views/vuemastery/conditional_rendering.html.erb</p>
+
+<div id="vuemastery-conditional-rendering" v-cloak>
+  <h1>{{ product }}</h1>
+  <!-- <p v-if="inStock">In Stock</p> -->
+  <p v-show="inStock">In Stock</p>
+  <!-- <p v-if="inventory > 10">In Stock</p>
+  <p v-else-if="inventory < 10 && inventory > 0">Almost sold out!</p>
+  <p v-else>Out of Stock</p> -->
+</div>

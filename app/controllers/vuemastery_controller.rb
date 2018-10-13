@@ -7,4 +7,7 @@ class VuemasteryController < ApplicationController
 
   def attribute_binding
   end
+
+  def conditional_rendering
+  end
 end
