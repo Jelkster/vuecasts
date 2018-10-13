@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'vuemastery/the_vue_instance'
   get 'vuemastery/attribute_binding'
   get 'vuemastery/conditional_rendering'
+  get 'vuemastery/list_rendering'
 end

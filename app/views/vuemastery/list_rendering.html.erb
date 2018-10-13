@@ -1,0 +1,18 @@
+<h1>Vuemastery#list_rendering</h1>
+<p>Find me in app/views/vuemastery/list_rendering.html.erb</p>
+
+<%= link_to nil, 'https://www.vuemastery.com/courses/intro-to-vue-js/list-rendering' %>
+
+<div id="vuemastery-list-rendering" v-cloak>
+  <h1>{{ product }}</h1>
+  <p v-if="inStock">In Stock</p>
+  <p v-else>Out of Stock</p>
+
+  <ul>
+    <li v-for="detail in details">{{ detail }}</li>
+  </ul>
+
+  <div v-for="variant in variants" :key="variant.variantId">
+    <p>{{ variant.variantColor }}</p>
+  </div>
+</div>

@@ -10,4 +10,7 @@ class VuemasteryController < ApplicationController
 
   def conditional_rendering
   end
+
+  def list_rendering
+  end
 end
