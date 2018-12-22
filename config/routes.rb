@@ -2,11 +2,11 @@
 Rails.application.routes.draw do
   root 'vuecasts#home'
 
-  get 'vuecasts/index'
+  get 'vuecasts', to: 'vuecasts#index'
   get 'vuecasts/basic_data_binding'
   get 'vuecasts/lists'
 
-  get 'vuemastery/index'
+  get 'vuemastery', to: 'vuemastery#index'
   get 'vuemastery/the_vue_instance'
   get 'vuemastery/attribute_binding'
   get 'vuemastery/conditional_rendering'
