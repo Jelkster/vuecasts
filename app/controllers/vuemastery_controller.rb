@@ -13,4 +13,7 @@ class VuemasteryController < ApplicationController
 
   def list_rendering
   end
+
+  def event_handling
+  end
 end
