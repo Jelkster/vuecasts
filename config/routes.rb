@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'vuecasts', to: 'vuecasts#index'
   get 'vuecasts/basic_data_binding'
   get 'vuecasts/lists'
+  get 'vuecasts/vue_event_listeners'
 
   get 'vuemastery', to: 'vuemastery#index'
   get 'vuemastery/the_vue_instance'

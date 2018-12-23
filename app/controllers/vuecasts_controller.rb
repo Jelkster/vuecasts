@@ -10,4 +10,7 @@ class VuecastsController < ApplicationController
 
   def lists
   end
+
+  def vue_event_listeners
+  end
 end

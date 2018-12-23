@@ -1,0 +1,18 @@
+<h1>Vuecasts#vue_event_listeners</h1>
+
+<%= link_to nil, 'https://laracasts.com/series/learn-vue-2-step-by-step/episodes/4' %>
+
+<p></p>
+
+<div id="vuecasts-vue-event-listeners">
+  <ul>
+    <!-- <li v-for="name in names">{{ name }}</li> -->
+    <li v-for="name in names" v-text="name"></li>
+  </ul>
+  <!-- $vm0.names.push('Susan') -->
+
+  <input id="input" type="text" v-model="newName">
+  <button @click="addName">Add Name</button>
+  <!-- <button v-on:click="addName">Add Name</button> -->
+  <!-- <button id="button">Add Name</button> -->
+</div>
