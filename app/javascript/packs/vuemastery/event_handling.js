@@ -7,6 +7,7 @@ document.addEventListener('turbolinks:load', () => {
   var element = document.getElementById('vuemastery-event-handling')
   if(element != null) {
     var app = new Vue({
+      name: 'Socks',
       el: element,
       data: {
         product: 'Socks',
