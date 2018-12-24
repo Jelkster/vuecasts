@@ -1,5 +1,6 @@
 import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
+import App from '../../app.vue'
 
 Vue.use(TurbolinksAdapter)
 
@@ -28,6 +29,12 @@ document.addEventListener('turbolinks:load', () => {
           this.image = image
         }
       }
+    })
+    // append "hello vue" component to page to test HMR
+    const el = document.body.appendChild(document.createElement('hello'))
+    const app = new Vue({
+      el,
+      render: h => h(App)
     })
   }
 })

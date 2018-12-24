@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <p @click="add">{{ message }}</p>
+    <p>{{ count }}</p>
   </div>
 </template>
 
@@ -8,7 +9,13 @@
 export default {
   data: function () {
     return {
-      message: "Hello Vue!"
+      message: "Hello Vue!",
+      count: 0
+    }
+  },
+  methods: {
+    add() {
+      this.count += 1
     }
   }
 }
