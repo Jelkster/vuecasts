@@ -1,2 +1,2 @@
 # vuecasts
-Integrating vue.js tutorials from vuecasts.com into Rails
+Integrating vue.js tutorials into Rails
