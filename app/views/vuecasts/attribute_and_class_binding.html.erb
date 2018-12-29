@@ -1,0 +1,15 @@
+<h1>Vuecasts#attribute_and_class_binding</h1>
+
+<%= link_to nil, 'https://laracasts.com/series/learn-vue-2-step-by-step/episodes/5' %>
+
+<p></p>
+
+<div id="vuecasts-attribute-and-class-binding" v-cloak>
+  <h1 :class="className">Hello World</h1>
+
+  <button :class="{'is-loading':isLoading}" @click="toggleClass">Click Me</button>
+
+  <button :title="title">Hover Over Me</button>
+  <!-- <button v-bind:title="title">Hover Over Me</button> -->
+  <!-- <button title="I am the title of the button.">Hover Over Me</button> -->
+</div>
