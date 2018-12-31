@@ -1,0 +1,34 @@
+<h1>Vuemastery#class_and_style_binding</h1>
+
+<%= link_to nil, 'https://www.vuemastery.com/courses/intro-to-vue-js/class-&-style-binding' %>
+
+<div id="vuemastery-class-and-style-binding" v-cloak>
+  <h1>{{ product }}</h1>
+  <p>{{ image }}</p>
+  <p v-if="inStock">In Stock</p>
+  <p v-else>Out of Stock</p>
+
+  <ul>
+    <li v-for="detail in details">{{ detail }}</li>
+  </ul>
+
+  <div v-for="variant in variants"
+       :key="variant.variantId"
+       class="color-box"
+       :style="{backgroundColor: variant.variantColor}"
+       @mouseover="updateProduct(variant.variantImage)">
+  </div>
+
+  <!--
+    You can bind an entire class object or array of classes to an element
+    :class="classObject"
+    :class="[activeClass, errorClass]"
+  -->
+
+  <button v-on:click="addToCart">Add to cart</button>
+  <!-- <button v-on:click="cart += 1">Add to cart</button> -->
+
+  <div class="cart">
+    <p>Cart ({{cart}})</p>
+  </div>
+</div>
