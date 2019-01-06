@@ -6,4 +6,5 @@ class VuemasteryController < ApplicationController
   def list_rendering; end
   def event_handling; end
   def class_and_style_binding; end
+  def computed_properties; end
 end
