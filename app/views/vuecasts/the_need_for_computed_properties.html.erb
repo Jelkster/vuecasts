@@ -1,0 +1,19 @@
+<h1>Vuecasts#the_need_for_computed_properties</h1>
+
+<%= link_to nil, 'https://laracasts.com/series/learn-vue-2-step-by-step/episodes/6' %>
+
+<p></p>
+
+<div id="vuecasts-the_need_for_computed_properties" v-cloak>
+  <h1>{{ reversedMessage }}</h1>
+
+  <h2>All Tasks</h2>
+  <ul>
+    <li v-for="task in tasks" v-text="task.description"></li>
+  </ul>
+
+  <h2>Incomplete Tasks</h2>
+  <ul>
+    <li v-for="task in incompleteTasks" v-text="task.description"></li>
+  </ul>
+</div>

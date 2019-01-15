@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'vuecasts/lists'
   get 'vuecasts/vue_event_listeners'
   get 'vuecasts/attribute_and_class_binding'
+  get 'vuecasts/the_need_for_computed_properties'
 
   get 'vuemastery', to: 'vuemastery#index'
   get 'vuemastery/the_vue_instance'
