@@ -6,4 +6,5 @@ class VuecastsController < ApplicationController
   def vue_event_listeners; end
   def attribute_and_class_binding; end
   def the_need_for_computed_properties; end
+  def components_101; end
 end
