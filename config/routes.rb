@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get 'vuemastery/event_handling'
   get 'vuemastery/class_and_style_binding'
   get 'vuemastery/computed_properties'
+  get 'vuemastery/components'
 end
