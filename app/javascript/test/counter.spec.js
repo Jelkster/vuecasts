@@ -1,4 +1,4 @@
-import Counter from '../components/testingvue/counter.js'
+import Counter from '../components/testingvue/counter.vue'
 
 describe ('Counter', () => {
   let wrapper
@@ -25,5 +25,9 @@ describe ('Counter', () => {
     wrapper.find('button').trigger('click')
 
     expect(wrapper.find('.count').html()).toContain(1)
+  })
+
+  it ('#hello', () => {
+    expect(wrapper.vm.hello()).toBe('Hello world')
   })
 })
