@@ -5,3 +5,6 @@ global.mount = require('@vue/test-utils').mount // shallow mount can be useful f
 
 // extend vue-test-utils
 // https://www.npmjs.com/package/vtu-extension
+
+// https://github.com/vuejs/vue-cli/issues/2128#issuecomment-453109575
+window.Date = Date
